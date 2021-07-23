@@ -6,7 +6,6 @@ import time
 import random
 import pyjokes
 import speech_recognition as sr
-x
 recognizer = sr.Recognizer()
 mic = sr.Microphone()
 d = '/Applications'
