@@ -98,6 +98,15 @@ def assistant_process(human_voice):
         app = 'Microsoft Outlook'
         os.system('open ' + d + '/%s.app' % app.replace(' ', '\ '))
         say('opening Email')
+        
+    elif human_voice in ("calendar", "open calendar", 'check calendar'):
+        os.system("open /System/Applications/Calendar.app")
+        say('opening Calendar')
+
+    elif human_voice in ("music", "open music", "play music","play some song"):
+        os.system("open /System/Applications/Music.app")
+        say('opening Music')
+
 
     elif human_voice in ("joke", "tell me a joke", "pyjoke","joke please","fun","make me laugh"):
         joke = pyjokes.get_joke(language="en", category="neutral")
